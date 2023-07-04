@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+  }
+
+  .layout1 .item{
+    background-color: rgb(187, 187, 187);
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px;
+    border: rgb(0, 0, 0) 1px solid;
+    width: 31%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+  }
+
+  .layout1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 40px;
+    gap: 20px;
+    width: 80vw;
+    height: auto;
+    border-radius: 6px;
+    border: rgb(128, 184, 184) 3px solid;
+    background-color: aqua;
+    margin: 80px auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(max-width: 412px) {
+    .layout1{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .layout1 .item{
+        width: 100%;
+        height: 200px;
+    }
+  }
+
+
+  .layout2 .item{
+    color: #000;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .layout2 {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    width: 60vw;
+    height: auto;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    border: aqua 3px solid;
+    margin: 80px auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media(max-width: 412px) {
+    .layout2{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .layout2 .item{
+        width: 100%;
+        height: 200px;
+    }
+  }
+
+  .layout3 .item1, .layout3 .item2{
+    border: aqua 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+
+  .layout3 .item1{
+    width: 33%;
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .layout3 .item2{
+    width: 66%;
+    border-radius: 0px 6px 6px 0px;
+  }
+
+  .layout3 {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    width: 60vw;
+    height: auto;
+    margin: 80px auto;
+  }
+
+  @media(max-width: 412px) {
+    .layout3{
+        flex-direction: column;
+    }
+    .layout3 .item1, .layout3 .item2{
+        width: 100%;
+        height: 200px;
+        border-radius: 6px;
+    }
+  }
+
+  .layout4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 40px;
+    gap: 20px;
+    width: 80vw;
+    height: auto;
+    margin: 80px auto;
+  }
+
+  .layout4 .item1, 
+  .layout4 .item2,
+  .layout4 .item3,
+  .layout4 .item4,
+  .layout4 .item5 {
+    border: aqua 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+  }
+
+  .layout4 .item1 {
+    width: 100%;
+  }
+
+  .layout4 .item2 {
+    width: 65%;
+  }
+
+  .layout4 .item3 {
+    width: 32%;
+  }
+
+  .layout4 .item4 {
+    width: 32%;
+  }
+
+  .layout4 .item5 {
+    width: 65%;
+  }
+
+  @media(max-width: 412px) {
+    .layout4{
+        flex-direction: column;
+    }
+    .layout4 .item1, 
+    .layout4 .item2,
+    .layout4 .item3{
+        width: 100%;
+        height: 200px;
+    }
+
+    .layout4 .item4,
+    .layout4 .item5 {
+        width: 47%;
+        height: 200px;
+    }
+  }
+
+  .layout5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 40px;
+    gap: 20px;
+    width: 80vw;
+    height: auto;
+    margin: 80px auto;
+  }
+
+  .layout5 .item1, 
+  .layout5 .item2,
+  .layout5 .item3,
+  .layout5 .item4,
+  .layout5 .item5 {
+    border: aqua 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+  }
+
+  .layout5 .item1 {
+    width: 100%;
+  }
+
+  .layout5 .item2 {
+    width: 20%;
+  }
+
+  .layout5 .item3 {
+    width: 56.5%;
+  }
+
+  .layout5 .item4 {
+    width: 20%;
+  }
+
+  .layout5 .item5 {
+    width: 100%;
+  }
+
+  @media(max-width: 800px) {
+    .layout5{
+        flex-direction: column;
+    }
+
+    .layout5 .item1,
+    .layout5 .item4,
+    .layout5 .item5 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .layout5 .item3{
+        width: 100%;
+        height: 400px;
+    }
+    .layout5 .item2 {
+        display: none;
+    } 
+
+  }
+
+
